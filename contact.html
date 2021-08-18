@@ -11,7 +11,7 @@
         <link href="./main.css"  rel="stylesheet" type="text/css">
         <!--fonts-->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet"> 
     </head>
     <body>
 		<!--Loader-->
@@ -29,10 +29,10 @@
             <!--Navigation-->
             <nav>
                 <ul class="link-class" id="links">
-                    <li><a href="index.html" title="About">About</a></li>
+                    <li><a href="index.html" title="Home">Home</a></li>
                     <li><a href="academics.html" title="Academics">Academics</a></li>
                     <li><a href="piano.html" title="Piano">Piano</a></li>
-                    <li><a href="contact.html" title="Contact Me" class="active">Contact Me</a></li>
+                    <li><a href="contact.html" title="Contact" class="active">Contact</a></li>
                 </ul>
             </nav>
         </section>
@@ -42,10 +42,32 @@
                 <div class="subtitle">
                     <h3>Contact Me</h3>
                 </div>
-                <div class="writing toosmall" style="text-align:center;">
-                    <p>Would you like to get in touch with me through email?  <a href="https://docs.google.com/forms/d/e/1FAIpQLSficOY2sB3kzo2lqU6ytZCDNdGEgs9iOt_2hZttMSn-V8d-HQ/viewform?usp=pp_url" 
-                    target="_blank">Fill out this form!</a></p>
-		            <p>I also have a presence on LinkedIn; feel free to take a look!</p>
+                <div class="writing" style="text-align:center;">
+		            <p>Check out my presence on LinkedIn <a href="https://www.linkedin.com/in/eric-petersen-79513b1b5/" target="_blank">here</a>! Or send me a message below:</p>
+                </div>
+                <div id="contact-form">
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li>Name:</li>
+                        <li>Email:</li>
+                        <li>Subject:</li>
+                        <li>Message:</li>
+                    </ul>
+                    <form action="https://formspree.io/f/mqkwgdlg" method="post">
+                        <p>
+                            <input type="text" name="name">
+                        </p>
+                        <p>
+                            <input type="email" name="email">
+                        </p>
+                        <p>
+                            <input type="text" name="subject">
+                        </p>
+                        <p>
+                            <textarea name="message" rows="5"></textarea>
+                        </p>
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Reset">
+                    </form>
                 </div>
             </div>
         </section>
