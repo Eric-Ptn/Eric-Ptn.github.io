@@ -16,12 +16,12 @@ h1, p, dl, h3, h4{
     margin-top:2em;
     margin-bottom:3em;
     color:black; 
-    font-size: 1em;
-    font-family: 'Rubik', sans-serif;
+    font-size: 1.25em;
+    font-family: 'Dosis', sans-serif;
     padding-left:5%;
     padding-right:5%;
     line-height: 200%;
-    max-width:60em;
+    max-width:48em;
     margin-left:auto;
     margin-right:auto;
 }
@@ -37,15 +37,19 @@ h1, p, dl, h3, h4{
     margin-top:2em;
     margin-bottom:3em;
     color:black; 
-    font-size: 1em;
-    font-family: 'Rubik', sans-serif;
+    font-size: 1.25em;
+    font-family: 'Dosis', sans-serif;
     line-height: 200%;
 }
 .float-image{
-	width:15%;
-	max-width:8em;
-    flex-shrink:0;
+	width:20%;
+    min-width:9em;
     margin-left:2.5%;
+    flex-shrink:0;
+}
+#graduating-guy{
+    margin-left:0;
+    margin-right:2.5%;
 }
 .column-writing{
     display:flex;
@@ -60,8 +64,8 @@ h1, p, dl, h3, h4{
     margin-top:3em;
     width:45%;
     color:black; 
-    font-size: 1em;
-    font-family: 'Rubik', sans-serif;
+    font-size: 1.25em;
+    font-family: 'Dosis', sans-serif;
     line-height:200%;
 }
 /*top section*/
@@ -81,7 +85,7 @@ h1, p, dl, h3, h4{
 header h1{
     color:white;
     text-align:left;
-    font-size:2.5em;
+    font-size:2em;
     font-family: 'Montserrat', sans-serif;
     margin-right:3em;
     margin-left:0.5em;
@@ -140,8 +144,6 @@ nav a.active{
 }
 .icon{
 	display:none;
-	border-radius:8px;
-	background-color:rgb(211,211,211);
 }
 .icon:active{
 	transform:translateY(1px);
@@ -153,7 +155,7 @@ nav a.active{
 #to-top{
 	display:none;
 	width:3em;
-	border-radius:50%;
+    border-radius: 50%;
 	position:fixed;
 	bottom:1em;
 	right:1em;
@@ -191,7 +193,7 @@ nav a.active{
 	z-index:4;
 	color:black; 
     font-size: 1em;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Dosis', sans-serif;
     width:70px;
 }
 @keyframes spin {
@@ -201,12 +203,14 @@ nav a.active{
 /*sections within the website*/
 .section{
 	opacity:0;
+    transform: translateY(50px);
     padding-bottom:4em;
     padding-top:4em;
     transition:all ease 1s;
 }
 .section.is-active{
 	opacity:1;
+    transform: translateY(0px);
 }
 @keyframes first-section{
 	from{opacity:0;}
@@ -216,7 +220,7 @@ nav a.active{
 	background-color:var(--bg-1);
     text-align:left;
     color:black;
-    font-family:'Rubik', sans-serif;
+    font-family:'Dosis', sans-serif;
     margin:0em;
     animation-name: first-section;
     animation-duration: 1s;
@@ -238,10 +242,6 @@ nav a.active{
     font-size:1.5em;
 }
 /*picture of me within about-1*/
-#me{
-    width:20%;
-    max-width:12em;
-}
 #about-2{
 	background-color:var(--bg-2);
     padding-top:2em;
@@ -308,12 +308,23 @@ a:hover{
     height:50vw;
     margin:auto;
 }
-.iframe-link{
-    display:none;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:1em;
-    width:9em;
+/*contact form*/
+#contact-form{
+    display:flex;
+    width:50vw;
+    min-width:15em;
+    margin:auto;
+    font-family: 'Dosis', sans-serif;
+}
+form, input, textarea{
+    width:40vw;
+    font-family: 'Dosis', sans-serif;
+}
+#contact-form ul{
+    width:5vw;
+    min-width:4em;
+    flex-shrink: 0;
+    margin:0 5% 0 0;
 }
 @media screen and (max-width:390px){
 	#about-1 h1{
@@ -326,14 +337,11 @@ a:hover{
 		padding-bottom:2em;
 	}
 }
-@media screen and (max-width:490px){
+@media screen and (max-width:530px){
 	.top{
         flex-direction: column;
 		position:static;
 		align-items:flex-start;
-    }
-    .iframe-link{
-        display:block;
     }
     header h1{
         text-align:left;
@@ -428,7 +436,7 @@ a:hover{
     	font-size:1.25em;
     }
 }
-@media screen and (max-width:975px) and (min-width:491px){
+@media screen and (max-width:1024px) and (min-width:530px){
     .top{
         flex-direction: column;
 		position:static;
