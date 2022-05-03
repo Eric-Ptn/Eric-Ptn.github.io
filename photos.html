@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Eric Petersen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link href="./main.css" rel="stylesheet" type="text/css">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--Loader-->
+    <div id="loading">
+        <div id="loading-image" alt="Loading..."></div>
+        <p>Loading...</p>
+    </div>
+    <!--Top section-->
+    <img src="1-images/navigation.png" class="icon" onclick="hamburgers()">
+    <section class="top">
+        <!--Header-->
+        <header>
+            <h1>Eric Petersen</h1>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <ul class="link-class" id="links">
+                <li><a href="index.html" title="About">About</a></li>
+                <li><a href="timeline.html" title="Timeline">Timeline</a></li>
+                <li><a href="photos.html" title="Photos" class="active">Photos</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="content">
+        <div class="subtitle" style="margin-top:1em;">
+            <h3>04/09/2022 Test Flight</h3>
+        </div>
+        <div class="column-writing section">
+            <div class="column-container">
+                <img class="column" src="1-images/alive-plane.jpg" alt="alive plane" />
+                <div class="photo-text">The UBC Aerodesign Advanced plane, featuring a blended wing design, destined for greatness at Fort Worth this May.</div>
+            </div>
+            <div class="column-container">
+                <img class="column" src="1-images/stadium.jpg" alt="stadium plane" />
+                <div class="photo-text">A bird's eye view of the UBC Thunderbirds Stadium.</div>
+            </div>
+        </div>
+        <div class="column-writing section">
+            <div class="column-container">
+                <img class="column" src="1-images/plane-ded.jpg" alt="dead plane" />
+                <div class="photo-text">Achieved greatness before Fort Worth ;-;</div>
+            </div>
+            <div class="column-container">
+                <img class="column" src="1-images/the-masses.jpg" alt="the masses" />
+                <div class="photo-text">The mass of engineers mourn and investigate the loss.</div>
+            </div>
+        </div>
+        <div class="subtitle">
+            <h3>British Columbian Children's Hospital</h3>
+        </div>
+        <div class="column-writing section">
+            <div class="column-container">
+                <img class="column" src="1-images/bcch-cad.jpg" alt="BCCH CAD" />
+                <div class="photo-text">CAD modelling for the BC Children's Hospital.</div>
+            </div>
+        </div>
+    </section>
+    <img src="1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+    <script src="javascript.js"></script>
+</body>
+</html>

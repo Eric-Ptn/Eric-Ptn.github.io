@@ -14,13 +14,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet"> 
     </head>
     <body>
-		<!--Loader-->
-		<div id="loading">
-			<div id="loading-image" alt="Loading..."></div>
-			<p>Loading...</p>
-		</div>  
+        <!--Loader-->
+        <div id="loading">
+            <div id="loading-image" alt="Loading..."></div>
+            <p>Loading...</p>
+        </div>
         <!--Top section-->
-		<img src="1-images/navigation.png" class="icon" onclick="hamburgers()">
+        <img src="1-images/navigation.png" class="icon" onclick="hamburgers()">
         <section class="top">
             <!--Header-->
             <header>
@@ -29,9 +29,9 @@
             <!--Navigation-->
             <nav>
                 <ul class="link-class" id="links">
-                    <li><a href="index.html" title="Home">Home</a></li>
-                    <li><a href="academics.html" title="Academics">Academics</a></li>
-                    <li><a href="piano.html" title="Piano">Piano</a></li>
+                    <li><a href="index.html" title="About">About</a></li>
+                    <li><a href="timeline.html" title="Timeline">Timeline</a></li>
+                    <li><a href="photos.html" title="Photos">Photos</a></li>
                     <li><a href="contact.html" title="Contact" class="active">Contact</a></li>
                 </ul>
             </nav>
@@ -43,34 +43,28 @@
                     <h3>Contact Me</h3>
                 </div>
                 <div class="writing" style="text-align:center;">
-		            <p>Check out my presence on LinkedIn <a href="https://www.linkedin.com/in/eric-petersen-79513b1b5/" target="_blank">here</a>! Or send me a message below:</p>
+                    <p>Check out my presence on LinkedIn <a href="https://www.linkedin.com/in/eric-petersen-79513b1b5/" target="_blank">here</a>!</p>
+                    <p>Or send me a message below:</p>
                 </div>
                 <div id="contact-form">
-                    <ul style="list-style: none; padding-left: 0;">
+                    <ul style="list-style: none; padding-left: 0; color:white;">
                         <li>Name:</li>
                         <li>Email:</li>
                         <li>Subject:</li>
                         <li>Message:</li>
                     </ul>
                     <form action="https://formspree.io/f/mqkwgdlg" method="post">
-                        <p>
-                            <input type="text" name="name">
-                        </p>
-                        <p>
-                            <input type="email" name="email">
-                        </p>
-                        <p>
-                            <input type="text" name="subject">
-                        </p>
-                        <p>
-                            <textarea name="message" rows="5"></textarea>
-                        </p>
-                        <input type="submit" value="Send">
-                        <input type="reset" value="Reset">
+                            <input type="text" name="name" style="background-color:rgb(200,200,200);">
+                            <input type="email" name="email" style="background-color:rgb(200,200,200);">
+                            <input type="text" name="subject" style="background-color:rgb(200,200,200);">
+                            <textarea name="message" rows="5" style="background-color:rgb(200,200,200);"></textarea>
+                        <input type="submit" value="Send" style="background-color:rgb(200,200,200);">
+                        <input type="reset" value="Reset" style="background-color:rgb(200,200,200);">
                     </form>
                 </div>
             </div>
         </section>
+        <img src="1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
         <script src="javascript.js"></script>
     </body>
 </html>

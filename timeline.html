@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Eric Petersen</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--CSS-->
+        <link href="./main.css" rel="stylesheet" type="text/css">
+        <!--fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <!--Loader-->
+        <div id="loading">
+            <div id="loading-image" alt="Loading..."></div>
+            <p>Loading...</p>
+        </div>
+        <!--Top section-->
+        <img src="1-images/navigation.png" class="icon" onclick="hamburgers()">
+        <section class="top">
+            <!--Header-->
+            <header>
+                <h1>Eric Petersen</h1>
+            </header>
+            <!--Navigation-->
+            <nav>
+                <ul class="link-class" id="links">
+                    <li><a href="index.html" title="About">About</a></li>
+                    <li><a href="timeline.html" title="Timeline" class="active">Timeline</a></li>
+                    <li><a href="photos.html" title="Photos">Photos</a></li>
+                    <li><a href="contact.html" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        </style>
+        <div class="timeline-container">
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="timeline-content">
+                            <h2 class="date">Present:</h2>
+                            <h1>UBC Aerodesign, Advanced Airfoils</h1>
+                            <p>Designing RC aircraft for the international SAE competition in Fort Worth, Texas.<br /><br /></p>
+                            <h1>1st year Applied Science at UBC</h1>
+                            <p>Is over! Resting up for 2nd year specializations.<br /><br /></p>
+                            <h1>Better website?</h1>
+                            <p>Applied for a web dev position and realized this needed updating</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h2 class="date">September 2021</h2>
+                            <h1>UBC Early Entrance</h1>
+                            <p>Admitted to the Faculty of Applied Science of University of British Columbia!<br /><br /></p>
+                            <h1>University Transition Program Early Entrance Award</h1>
+                            <p>Awarded for early entrance to university, as well as academic merit and leadership skills.<br /><br /></p>
+                            <h1>BC Achievement Scholarship</h1>
+                            <p>Awarded to the top 8000 high school graduates of British Columbia.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h2 class="date">2020-2021</h2>
+                            <h1>COSMIC Medical & Project COVER</h1>
+                            <p>During the beginning of lockdown, helped out with outreach and onboarding.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h2 class="date">2020</h2>
+                            <h1>COSMIC Medical & Project COVER</h1>
+                            <p>During the beginning of lockdown, helped out with outreach and onboarding.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <img src="1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+        <script src="javascript.js"></script>
+    </body>
+</html>

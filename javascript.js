@@ -3,11 +3,16 @@ const screenOffset = window.innerHeight / 2
 
 const elements = document.getElementsByClassName('section')
 for (let element of elements) {
-  window.addEventListener('scroll', () => {
-    if (window.scrollY + screenOffset > element.offsetTop - 120) {
-      element.classList.add('is-active')
+    window.addEventListener('load', () => {
+        if (window.scrollY + screenOffset > element.offsetTop - 400) {
+            element.classList.add('is-active')
+        }
+    })
+    window.addEventListener('scroll', () => {
+    if (window.scrollY + screenOffset > element.offsetTop - 400) {
+        element.classList.add('is-active')
     }
-  })
+    })
 }
 
 //to top button
@@ -41,6 +46,4 @@ function hamburgers() {
 //loading bar
 window.onload = function(){ 
     document.getElementById("loading").style.display = "none";
-    document.body.style.overflow = "auto";
-    document.body.style.margin = "2em";
 }
