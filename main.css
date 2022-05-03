@@ -298,7 +298,7 @@ nav a.active{
 	height:100%;
 	position:fixed;
 	z-index: 3;
-	background-color:white;
+	background-color:rgb(56,56,56);
 }
 
 #loading-image {
@@ -306,8 +306,8 @@ nav a.active{
 	height:50px;
 	margin:auto;
 	border-radius:50%;
-	border:10px solid lightgrey;
-	border-top:10px solid cyan;
+	border:10px solid black;
+	border-top:10px solid rgb(200,200,200);
 	z-index: 4;
 	animation: spin 1.5s linear infinite;
 }
@@ -318,7 +318,7 @@ nav a.active{
 	left:50%;
 	transform: translate(-50%, 50px);
 	z-index:4;
-	color:black; 
+	color:white; 
     font-size: 1em;
     font-family: 'Dosis', sans-serif;
     width:70px;
