@@ -27,7 +27,7 @@ input, textarea{
     /*margin-top:2em;
     margin-bottom:3em;*/
     color:white; 
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-family: 'Dosis', sans-serif;
     /*padding-left:5%;
     padding-right:5%;*/
@@ -425,6 +425,7 @@ form, input, textarea{
     width:60vw;
     max-width:750px;
     font-family: 'Dosis', sans-serif;
+    font-size:1em;
 }
 
 /*MEDIA QUERIES
@@ -479,6 +480,10 @@ form, input, textarea{
         flex-direction: column;
     }
 
+    .writing{
+        font-size:1.25em;
+    }
+
     .float-image {
         width: 100%;
         margin:0;
@@ -524,6 +529,10 @@ form, input, textarea{
 @media screen and (max-width:600px) and (min-width:480px) {
     .writing-with-images {
         flex-direction: column;
+    }
+
+    .writing {
+        font-size: 1.25em;
     }
 
     .float-image {
@@ -612,6 +621,10 @@ form, input, textarea{
 @media screen and (max-width:480px) {
     .writing-with-images {
         flex-direction: column;
+    }
+
+    .writing {
+        font-size: 1.1em;
     }
 
     .float-image {
