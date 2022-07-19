@@ -67,14 +67,14 @@ input, textarea{
 .writing{
     color:white; 
     font-size: 1.5em;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-left:auto;
     margin-right:auto;
 }
 .paragraph-writing {
     color: white;
     font-size: 1.25em;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-left: auto;
     margin-right: auto;
 }
@@ -86,7 +86,7 @@ input, textarea{
 .float-writing{
     color:white; 
     font-size: 1.25em;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 200%;
 }
 .float-image{
@@ -131,7 +131,7 @@ input, textarea{
     padding-top:1em;
     background-color:rgb(56,56,56);
     color:white;
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Open Sans',sans-serif;
     transition: ease 0.75s;
 }
 
@@ -239,7 +239,7 @@ nav a.active{
     padding: 100px 0;
     /*for the text to inherit*/
     color: white;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .timeline{
     width:80%;
@@ -357,7 +357,7 @@ nav a.active{
 	z-index:4;
 	color:white; 
     font-size: 1em;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     width:70px;
 }
 @keyframes spin {
@@ -379,7 +379,7 @@ nav a.active{
 
 #about-1{
     text-align:left;
-    font-family:'Raleway', sans-serif;
+    font-family:'Open Sans', sans-serif;
     margin:0em;
 }
 
@@ -417,12 +417,12 @@ a:hover{
     justify-content:center;
     min-width:15em;
     margin:auto;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 form, input, textarea{
     width:60vw;
     max-width:750px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size:1em;
 }
 
