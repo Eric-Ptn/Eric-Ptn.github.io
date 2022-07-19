@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eric Petersen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Eric Petersen, Eric Peterson, University Transition Program, UTP, UBC, University of British Columbia">
+    <meta name="description" content="I'm Eric Petersen, a 2nd year Engineering Phyics student at the University of British Columbia! Currently I'm exploring aerodynamics, Java programming, web design, music, and piano, and I would love to get in touch :) ">
+    <!--CSS-->
+    <link href="../styling/main.css" rel="stylesheet" type="text/css">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Loader-->
+    <div id="loading">
+        <div id="loading-image" alt="Loading..."></div>
+        <p>Loading...</p>
+    </div>
+    <!--Top section-->
+    <img src="1-images/navigation.png" class="icon" onclick="hamburgers()">
+    <section class="top">
+        <!--Header-->
+        <header>
+            <h1>Eric Petersen</h1>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <ul class="link-class" id="links">
+                <li><a href="../index.html" title="About" class="active">About</a></li>
+                <li><a href="../timeline.html" title="Timeline">Timeline</a></li>
+                <li><a href="../portfolio.html" title="Portfolio">Portfolio</a></li>
+                <li><a href="../contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!--Content-->
+    <section class="content">
+        <div class="slide-container">
+            <div class="mySlides">
+                <div class="column-container" style="width: 100%">
+                    <img class="column" src="../1-images/terrain-mapping.png" alt="XFLR model" />
+                    <div class="photo-text">XFLR model used to evaluate flight forces and stability</div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="column-container" style="width: 100%">
+                    <img class="column" src="../1-images/mapper-solidworks.png" alt="SolidWorks model" />
+                    <div class="photo-text">SolidWorks model for the terrain mapping system</div>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)" style="text-align:center"><</a>
+            <a class="next" onclick="plusSlides(1)" style="text-align:center">></a>
+        </div>
+    </section>
+    <img src="1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+    <script src="../javascript.js"></script>
+    <script src="slides.js"></script>
+</body>
+</html>
