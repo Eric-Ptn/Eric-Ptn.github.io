@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Eric Petersen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Eric Petersen, Eric Peterson, University Transition Program, UTP, UBC, University of British Columbia">
+    <meta name="description" content="I'm Eric Petersen, a 2nd year Engineering Phyics student at the University of British Columbia! Currently I'm exploring aerodynamics, Java programming, web design, music, and piano, and I would love to get in touch :)" />
+    <!--CSS-->
+    <link href="./main.css" rel="stylesheet" type="text/css">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--Loader-->
+    <div id="loading">
+        <div id="loading-image" alt="Loading..."></div>
+        <p>Loading...</p>
+    </div>
+    <!--Top section-->
+    <img src="1-images/navigation.png" class="icon" onclick="hamburgers()">
+    <section class="top">
+        <!--Header-->
+        <header>
+            <h1>Eric Petersen</h1>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <ul class="link-class" id="links">
+                <li><a href="index.html" title="About">About</a></li>
+                <li><a href="timeline.html" title="Timeline">Timeline</a></li>
+                <li><a href="portfolio.html" title="Portfolio" class="active">Portfolio</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="content">
+        <div class="subtitle" style="margin-top:1em;">
+            <h3>Projects</h3>
+        </div>
+        <div class="column-writing section">
+            <div class="column-container">
+                <img class="column" src="1-images/Render1.JPG" alt="Advanced Class 2022 render 1" />
+                <div class="photo-text">UBC AeroDesign Advanced Class plane</div>
+            </div>
+            <div class="column-container">
+                <img class="column" src="1-images/terrain-mapping.png" alt="Terrain Mapping Aircraft" />
+                <div class="photo-text">Terrain Mapping Aircraft Project</div>
+            </div>
+        </div>
+        <div class="column-writing section">       
+            <div class="column-container">
+                <img class="column" src="1-images/bcch-cad.jpg" alt="BCCH Medical Device Enclosure" />
+                <div class="photo-text">BCCH Medical Device Enclosure</div>
+            </div>
+        </div>
+        <div class="subtitle">
+            <h3>Coursework</h3>
+        </div>
+        <div class="column-writing section">
+            <div class="column-container">
+                <img class="column" src="1-images/claw.PNG" alt="Autonomous Claw" />
+                <div class="photo-text">Autonomous Claw - APSC 101</div>
+            </div>
+            <div class="column-container">
+                <img class="column" src="1-images/schematic-simon.png" alt="Arduino Simon Game" />
+                <div class="photo-text">Arduino Simon Game - APSC 160</div>
+            </div>
+        </div>
+    </section>
+    <img src="1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+    <script src="javascript.js"></script>
+</body>
+</html>
