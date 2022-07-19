@@ -22,6 +22,16 @@ h1, p, dl, h3, h4{
     margin: auto;
 }
 
+.portfolio-container{
+    display:flex;
+    flex-direction:row;
+}
+
+.video-container{
+    width:50vw;
+    margin:0px auto;
+}
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -101,16 +111,17 @@ input, textarea{
     width: 45%;
     margin: 0;
 }
-.column-container:hover .photo-text{
-    opacity:0.75;
-    transition: ease 0.75s;
-}
 .column{
     width:100%;
     height:auto;
 }
+.single-portfolio {
+    max-width: 40vw;
+    width: 100%;
+    margin: auto;
+}
 .photo-text {
-    opacity:0;
+    opacity:0.75;
     position: absolute;
     width:90%;
     padding-left:5%;
@@ -420,6 +431,17 @@ form, input, textarea{
 */
 
 @media screen and (max-width:1024px) and (min-width:900px){
+    .portfolio-container{
+        flex-direction:column;
+    }
+    .slide-container{
+        width:70vw;
+        margin-top:1.25em;
+    }
+    .video-container{
+        width:70vw;
+    }
+
     .writing-with-images {
         flex-direction: column;
     }
@@ -433,9 +455,25 @@ form, input, textarea{
     nav{
         font-size:0.75em;
     }
+    .single-portfolio {
+        max-width: 70vw;
+        width:100%;
+    }
 }
 
 @media screen and (max-width:899px) and (min-width:769px){
+    .portfolio-container {
+        flex-direction: column;
+    }
+
+    .slide-container {
+        width: 70vw;
+        margin-top: 1.25em;
+    }
+
+    .video-container {
+        width: 70vw;
+    }
     .writing-with-images {
         flex-direction: column;
     }
@@ -461,8 +499,24 @@ form, input, textarea{
     #about-1 {
         text-align: center;
     }
+    .single-portfolio {
+        max-width: 70vw;
+        width: 100%;
+    }
 }
 @media screen and (max-width:768px) and (min-width:601px) {
+    .portfolio-container {
+        flex-direction: column;
+    }
+
+    .slide-container {
+        width: 70vw;
+        margin-top: 1.25em;
+    }
+
+    .video-container {
+        width: 70vw;
+    }
     .writing-with-images {
         flex-direction: column;
     }
@@ -511,9 +565,26 @@ form, input, textarea{
     #about-1 h3{
         font-size:1em;
     }
+    .single-portfolio {
+        max-width: 70vw;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:600px) and (min-width:480px) {
+    .portfolio-container {
+        flex-direction: column;
+    }
+
+    .slide-container {
+        width: 70vw;
+        margin-top: 1.25em;
+    }
+
+    .video-container {
+        width: 70vw;
+    }
+
     .writing-with-images {
         flex-direction: column;
     }
@@ -603,9 +674,25 @@ form, input, textarea{
     .top{
         align-items:start;
     }
+    .single-portfolio {
+        max-width: 70vw;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:480px) {
+    .portfolio-container {
+        flex-direction: column;
+    }
+
+    .slide-container {
+        width: 70vw;
+        margin-top: 1.25em;
+    }
+
+    .video-container {
+        width: 70vw;
+    }
     .writing-with-images {
         flex-direction: column;
     }
@@ -702,5 +789,9 @@ form, input, textarea{
 
     .top {
         align-items: start;
+    }
+    .single-portfolio {
+        max-width: 70vw;
+        width: 100%;
     }
 }
