@@ -1,2 +1,2 @@
 # Eric-Ptn.github.io
-My personal website :)
+My personal website :) eric-ptn.github.io/
