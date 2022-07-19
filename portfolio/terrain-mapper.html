@@ -19,7 +19,7 @@
         <p>Loading...</p>
     </div>
     <!--Top section-->
-    <img src="1-images/navigation.png" class="icon" onclick="hamburgers()">
+    <img src="../1-images/navigation.png" class="icon" onclick="hamburgers()">
     <section class="top">
         <!--Header-->
         <header>
@@ -37,25 +37,57 @@
     </section>
     <!--Content-->
     <section class="content">
-        <div class="slide-container">
-            <div class="mySlides">
-                <div class="column-container" style="width: 100%">
-                    <img class="column" src="../1-images/terrain-mapping.png" alt="XFLR model" />
-                    <div class="photo-text">XFLR model used to evaluate flight forces and stability</div>
+        <div style="display:flex;flex-direction:row;align-items:flex-start">
+            <div style="margin-right:30px;">
+                <div class="subtitle" style="text-align:left">
+                    <h3>Overview</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <p>Inspired by my experience at UBC AeroDesign and a desire to test the skills I've learned so far, I began to independently design a canard, twin vertical tail, pusher aircraft configuration during the summer of 2022. This aircraft will later be equipped with sensors and an onboard system to provide video feedback and map the terrain underneath it. So far, I have completed <b>airfoil analysis</b> and determined a <b>3D wing configuration</b>, conducted <b>stability analysis</b>, and modelled the entire plane in <b>SolidWorks</b> with <b>DFA/M</b> considerations in mind. Next steps are to manufacture the first prototype and develop the necessary software.</p>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Design</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>Used <b>CFD</b> tools and <b>XFLR</b> to analyze aerodynamics</li>
+                        <li>Determined <b>dynamic stability</b> performance from <b>root locus graphs</b> of longitudinal and lateral response modes</li>
+                        <li>Created <b>SolidWorks model</b> of design</li>
+                    </ul>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Results</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>Achieved wing planform efficiency of <b>0.986</b> without sacrificing manufacturability</li>
+                        <li>Despite the canard configuration, all response modes are damped and dynamically stable</li>
+                        <li>Wing and tail stall characteristics are coordinated</li>
+                    </ul>
                 </div>
             </div>
-            <div class="mySlides">
-                <div class="column-container" style="width: 100%">
-                    <img class="column" src="../1-images/mapper-solidworks.png" alt="SolidWorks model" />
-                    <div class="photo-text">SolidWorks model for the terrain mapping system</div>
-                </div>
-            </div>
+            <div style="flex-shrink:0">
+                <div class="slide-container">
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/terrain-mapping.png" alt="XFLR model" />
+                            <div class="photo-text">XFLR model used to evaluate flight forces and stability</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/mapper-solidworks.png" alt="SolidWorks model" />
+                            <div class="photo-text">SolidWorks model for the terrain mapping system</div>
+                        </div>
+                    </div>
 
-            <a class="prev" onclick="plusSlides(-1)" style="text-align:center"><</a>
-            <a class="next" onclick="plusSlides(1)" style="text-align:center">></a>
+                    <a class="prev" onclick="plusSlides(-1)" style="text-align:center"><</a>
+                    <a class="next" onclick="plusSlides(1)" style="text-align:center">></a>
+                </div>
+            </div>
         </div>
     </section>
-    <img src="1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+    <img src="../1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
     <script src="../javascript.js"></script>
     <script src="slides.js"></script>
 </body>

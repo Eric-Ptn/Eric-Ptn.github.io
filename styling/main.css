@@ -17,7 +17,7 @@ h1, p, dl, h3, h4{
 }
 
 .slide-container {
-    max-width: 50em;
+    width: 40vw;
     position: relative;
     margin: auto;
 }
@@ -47,7 +47,7 @@ h1, p, dl, h3, h4{
 }
 
 input, textarea{
-    transform: translateX(-10px); /*dumb padding*/
+    transform: translateX(-10px); /*for padding*/
     padding:10px 10px;
     border:0;
     margin-top:5px;
@@ -55,26 +55,25 @@ input, textarea{
     line-height:100%;
 }
 .writing{
-    /*margin-top:2em;
-    margin-bottom:3em;*/
     color:white; 
     font-size: 1.5em;
     font-family: 'Dosis', sans-serif;
-    /*padding-left:5%;
-    padding-right:5%;*/
     margin-left:auto;
     margin-right:auto;
+}
+.paragraph-writing {
+    color: white;
+    font-size: 1.25em;
+    font-family: 'Dosis', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
 }
 .writing-with-images{
     display:flex;
     align-items: center;
-   /* padding-left:5%;
-    padding-right:5%;*/
     margin:auto;
 }
 .float-writing{
-    /*margin-top:2em;
-    margin-bottom:3em;*/
     color:white; 
     font-size: 1.25em;
     font-family: 'Dosis', sans-serif;

@@ -19,7 +19,7 @@
         <p>Loading...</p>
     </div>
     <!--Top section-->
-    <img src="1-images/navigation.png" class="icon" onclick="hamburgers()">
+    <img src="../1-images/navigation.png" class="icon" onclick="hamburgers()">
     <section class="top">
         <!--Header-->
         <header>
@@ -37,38 +37,69 @@
     </section>
     <!--Content-->
     <section class="content">
-        <div class="slide-container">
-            <div class="mySlides">
-                <div class="column-container" style="width:100%">
-                    <img class="column" src="../1-images/Render1.JPG" alt="Advanced Class 2022 render 1" />
-                    <div class="photo-text">SolidWorks render of the UBC AeroDesign Advanced Class plane</div>
+        <div style="display:flex;flex-direction:row;align-items:flex-start">
+            <div style="margin-right:30px;">
+                <div class="subtitle" style="text-align:left">
+                    <h3>Overview</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <p>UBC AeroDesign is an engineering student team that designs, builds, and flies payload-lifting, radio-controlled fixed-wing airplanes to compete in the international SAE Aero Design Collegiate Series. The 2022 Advanced Class competition featured a firefighting-inspired mission profile. As a part of the Advanced Airfoils Team, I helped conduct <b>airfoil analysis</b>, design a <b>3D wing configuration</b>, model the <b>vertical stabilizer</b> and size the <b>wing spar</b> to meet the competition requirements.</p>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Design</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>Modelled the vertical stabilizer in <b>SolidWorks</b>, added to the plane assembly in <b>PDM</b></li>
+                        <li>Configured the wing spar by using a strength-to-weight <b>material index</b> and finding an optimal area moment of inertia</li>
+                    </ul>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Results</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>Reduced assembly time and minimized human error through implementing <b>DFA/M</b> principles</li>
+                        <li>Wing spar was reused through multiple design iterations, reducing costs and ordering times</li>
+                        <li>The UBC Advanced Team earned <b>5th place</b> overall in the 2022 competition</li>
+                    </ul>
                 </div>
             </div>
-            <div class="mySlides">
-                <div class="column-container" style="width: 100%">
-                    <img class="column" src="../1-images/Render9.JPG" alt="Advanced Class 2022 render 2" style="width:100%" />
-                    <div class="photo-text">Solidworks render of the UBC AeroDesign Advanced Class plane</div>
-                </div>
-            </div>
-            <div class="mySlides">
-                <div class="column-container" style="width: 100%">
-                    <img class="column" src="../1-images/adv-slide.png" alt="Advanced Class 2022 technical presentation" />
-                    <div class="photo-text">A slide from the Advanced Class 2022 technical presentation</div>
-                </div>
-            </div>
-            <div class="mySlides">
-                <div class="column-container" style="width: 100%">
-                    <img class="column" src="../1-images/alive-plane.JPG" alt="Test flight" />
-                    <div class="photo-text">UBC AeroDesign Advanced Class plane at test flight</div>
-                </div>
-            </div>
+            <div style="flex-shrink:0">
+                <div class="slide-container">
+                    <div class="mySlides">
+                        <div class="column-container" style="width:100%">
+                            <img class="column" src="../1-images/Render1.JPG" alt="Advanced Class 2022 render 1" />
+                            <div class="photo-text">SolidWorks render of the UBC AeroDesign Advanced Class plane</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/Render9.JPG" alt="Advanced Class 2022 render 2" style="width:100%" />
+                            <div class="photo-text">Solidworks render of the UBC AeroDesign Advanced Class plane</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/adv-slide.png" alt="Advanced Class 2022 technical presentation" />
+                            <div class="photo-text">A slide from the Advanced Class 2022 technical presentation</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/alive-plane.JPG" alt="Test flight" />
+                            <div class="photo-text">UBC AeroDesign Advanced Class plane at test flight</div>
+                        </div>
+                    </div>
 
-            <a class="prev" onclick="plusSlides(-1)" style="text-align:center"><</a>
-            <a class="next" onclick="plusSlides(1)" style="text-align:center">></a>
+                    <a class="prev" onclick="plusSlides(-1)" style="text-align:center"><</a>
+                    <a class="next" onclick="plusSlides(1)" style="text-align:center">></a>
 
+                </div>
+            </div>
         </div>
     </section>
-    <img src="1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+    <img src="../1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
     <script src="../javascript.js"></script>
     <script src="slides.js"></script>
 </body>

@@ -19,7 +19,7 @@
         <p>Loading...</p>
     </div>
     <!--Top section-->
-    <img src="1-images/navigation.png" class="icon" onclick="hamburgers()">
+    <img src="../1-images/navigation.png" class="icon" onclick="hamburgers()">
     <section class="top">
         <!--Header-->
         <header>
@@ -37,12 +37,42 @@
     </section>
     <!--Content-->
     <section class="content">
-        <div class="column-container" style="max-width:50em; margin:auto; width:100%">
-            <img class="column" src="../1-images/schematic-simon.png" alt="Simon game schematic" />
-            <div class="photo-text">Arduino and LED setup for the "Simon Says" game</div>
+        <div style="display:flex;flex-direction:row;align-items:flex-start">
+            <div style="margin-right:30px;">
+                <div class="subtitle" style="text-align:left">
+                    <h3>Overview</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <p>Programmed an <b>Arduino</b> to play "Simon Says" using LEDs with a user. Generates random light sequences each game, and immediately responds to incorrect inputs.</p>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Design</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>Programmed and debugged <b>C</b> code within a simulated environment</li>
+                        <li>Used comments and functions to create clean, readable code</li>
+                    </ul>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Results</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>Gained proficiency with both Arduino and C programming</li>
+                        <li>Received over 100% on the lab assignment</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="flex-shrink:0">
+                <div class="column-container" style="max-width:40vw; margin:auto; width:100%">
+                    <img class="column" src="../1-images/schematic-simon.png" alt="Simon game schematic" />
+                    <div class="photo-text">Arduino and LED setup for the "Simon Says" game</div>
+                </div>
+            </div>
         </div>
     </section>
-    <img src="1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+    <img src="../1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
     <script src="../javascript.js"></script>
 </body>
 </html>

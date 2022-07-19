@@ -19,7 +19,7 @@
         <p>Loading...</p>
     </div>
     <!--Top section-->
-    <img src="1-images/navigation.png" class="icon" onclick="hamburgers()">
+    <img src="../1-images/navigation.png" class="icon" onclick="hamburgers()">
     <section class="top">
         <!--Header-->
         <header>
@@ -37,12 +37,43 @@
     </section>
     <!--Content-->
     <section class="content">
-        <div class="column-container" style="max-width:50em; margin:auto; width:100%">
-            <img class="column" src="../1-images/bcch-cad.jpg" alt="bcch cad"/>
-            <div class="photo-text">Medical device enclosure for the BC Children's Hospital</div>
+        <div style="display:flex;flex-direction:row;align-items:flex-start">
+            <div style="margin-right:30px;">
+                <div class="subtitle" style="text-align:left">
+                    <h3>Overview</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <p>Designed a medical device enclosure to support the Belly Breathing Program at the BC Children's Hospital.</p>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Design</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>Used <b>OpenSCAD</b> to create the design parametrically</li>
+                        <li>Designed to be <b>3D-printed</b></li>
+                        <li>Dimensioned components for other parts of the setup</li>
+                    </ul>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Results</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>The design has been modified and put into production</li>
+                        <li>Several prototypes being used at the BC Children's Hospital</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="flex-shrink:0">
+                <div class="column-container" style="max-width:40vw; margin:auto; width:100%">
+                    <img class="column" src="../1-images/bcch-cad.jpg" alt="bcch cad" />
+                    <div class="photo-text">Medical device enclosure for the BC Children's Hospital</div>
+                </div>
+            </div>
         </div>
     </section>
-    <img src="1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+    <img src="../1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
     <script src="../javascript.js"></script>
 </body>
 </html>
