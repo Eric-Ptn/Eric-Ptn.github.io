@@ -1,10 +1,9 @@
 :root {
-    --bg-1: rgb(56,56,56);
-    --bg-2: rgb(56,56,56); /*rgb(230, 255, 247)*/
+    --bg-1: rgb(56,56,56); /*rgb(230, 255, 247)*/
 }
 /*https://www.youtube.com/watch?v=E0d1sVRrwrE */
 body {
-    background-color: rgb(56,56,56);
+    background-color: var(--bg-1);
     margin:0;
 }
 .content{
@@ -53,7 +52,8 @@ h1, p, dl, h3, h4{
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: var(--bg-1);
+    color:white;
 }
 
 input, textarea{
@@ -129,7 +129,7 @@ input, textarea{
     bottom: 0%;
     padding-bottom:1em;
     padding-top:1em;
-    background-color:rgb(56,56,56);
+    background-color:var(--bg-1);
     color:white;
     font-family: 'Open Sans',sans-serif;
     transition: ease 0.75s;
@@ -137,7 +137,7 @@ input, textarea{
 
 /*top section*/
 .top{
-    background-color: rgb(56,56,56);
+    background-color: var(--bg-1);
     margin:0em;
     overflow:auto;
     display:flex;
@@ -335,7 +335,7 @@ nav a.active{
 	height:100%;
 	position:fixed;
 	z-index: 3;
-	background-color:rgb(56,56,56);
+	background-color:var(--bg-1);
 }
 
 #loading-image {
@@ -655,7 +655,7 @@ form, input, textarea{
         padding-top: 0.5em;
         padding-bottom: 0.5em;
         width: 100%;
-        background-color: rgb(56, 56, 56);
+        background-color: var(--bg-1);
         border-style: solid;
         border-width: 1px 0px 0px 0px;
         border-color: white;
@@ -771,7 +771,7 @@ form, input, textarea{
         padding-top: 0.5em;
         padding-bottom: 0.5em;
         width: 100%;
-        background-color: rgb(56, 56, 56);
+        background-color: var(--bg-1);
         border-style: solid;
         border-width: 1px 0px 0px 0px;
         border-color: white;
