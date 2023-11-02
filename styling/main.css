@@ -38,8 +38,8 @@ h1, p, dl, h3, h4{
     width: auto;
     padding: 16px;
     transform: translateY(-50%);
-    color: white;
-    font-weight: bold;
+    color: red;
+    font-weight: 950;
     font-size: 36px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
@@ -90,7 +90,8 @@ input, textarea{
     line-height: 200%;
 }
 .float-image{
-    width:50%;
+    /* width:50%; */
+    width:35%;
     flex-shrink:0;
     margin-left:2.5%;
 }
