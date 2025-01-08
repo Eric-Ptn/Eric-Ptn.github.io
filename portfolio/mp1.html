@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eric Petersen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Eric Petersen, Eric Peterson, University Transition Program, UTP, UBC, University of British Columbia">
+    <!--CSS-->
+    <link href="../styling/main.css" rel="stylesheet" type="text/css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Loader-->
+<div id="loading">
+    <div id="loading-image" alt="Loading..."></div>
+    <p>Loading...</p>
+</div>
+<!--Top section-->
+<img src="../1-images/navigation.png" class="icon" onclick="hamburgers()">
+<section class="top">
+    <!--Header-->
+    <header>
+        <h1>Eric Petersen</h1>
+    </header>
+    <!--Navigation-->
+    <nav>
+        <ul class="link-class" id="links">
+            <li><a href="../index.html" title="About">About</a></li>
+            <li><a href="../timeline.html" title="Timeline">Timeline</a></li>
+            <li><a href="../portfolio.html" title="Portfolio" class="active">Portfolio</a></li>
+            <li><a href="../contact.html" title="Contact">Contact</a></li>
+        </ul>
+    </nav>
+</section>
+<!--Content-->
+<section class="content">
+    <div class="portfolio-container section">
+        <div style="margin-right:30px;">
+            <div class="subtitle" style="text-align:left">
+                <h3>Overview</h3>
+            </div>
+            <div class="paragraph-writing">
+                <p>As part of our coursework in CPEN 221, we were put in teams to complete several mini-projects
+                    throughout the term. Our first project involved creating text prediction models as well as
+                    RateMyProfessor review analysis, and I led the completion of these more challenging tasks. In
+                    <b>Java</b>, we created new classes, programmed functions, added specifications and developed a
+                    comprehensive test suite using <b>Gradle</b> for each milestone. Code on Github here: <a href="https://github.com/Eric-Ptn/cpen221-miniproject1" target="_blank">https://github.com/Eric-Ptn/cpen221-miniproject1</a>
+                </p>
+            </div>
+            <div class="subtitle" style="text-align:left">
+                <h3>Design</h3>
+            </div>
+            <div class="paragraph-writing">
+                <ul style="margin:0">
+                    <li>Created a computer model to predict a word's synonyms using a <b>cosine similarity</b> measure between strings, trained
+                        on 20+ texts from classic literature</li>
+                    <li>Led the development of a RateMyProfessor sentiment analyzer, through
+                        a <b>Bayesian probability</b> calculation that maps word frequency to likely ratings</li>
+                    <li>Helped create an algorithm to generate potential search terms given a query, sorted by their weights</li>
+                </ul>
+            </div>
+            <div class="subtitle" style="text-align:left">
+                <h3>Results</h3>
+            </div>
+            <div class="paragraph-writing">
+                <ul style="margin:0">
+                    <li>Synonym prediction model correctly guesses over <b>80%</b> of synonyms, even with a limited dataset</li>
+                    <li><b>85%</b> accuracy in predicting the RateMyProfessor score of test review ratings</li>
+                </ul>
+            </div>
+        </div>
+        <div style="flex-shrink:0;margin:auto;">
+            <div class="slide-container section">
+                <div class="mySlides">
+                    <div class="column-container" style="width: 100%">
+                        <img class="column" src="../1-images/work-synonyms.png" alt="Word synonyms" />
+                        <div class="photo-text">Predicting the synonym to a word from a potential list</div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="column-container" style="width: 100%">
+                        <img class="column" src="../1-images/sentiment-analysis.png" alt="Sentiment Analysis" />
+                        <div class="photo-text">Bayesian analysis on review texts to predict ratings</div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="column-container" style="width: 100%">
+                        <img class="column" src="../1-images/autocompletor.png" alt="Autocompletor" />
+                        <div class="photo-text">Autocompletion of search terms given a query</div>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)"><</a>
+                <a class="next" onclick="plusSlides(1)">></a>
+            </div>
+        </div>
+    </div>
+</section>
+<img src="../1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+<script src="../javascript.js"></script>
+<script src="slides.js"></script>
+</body>
+</html>

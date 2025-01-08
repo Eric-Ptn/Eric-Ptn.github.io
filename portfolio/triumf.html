@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eric Petersen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Eric Petersen, Eric Peterson, University Transition Program, UTP, UBC, University of British Columbia">
+    <!--CSS-->
+    <link href="../styling/main.css" rel="stylesheet" type="text/css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Loader-->
+    <div id="loading">
+        <div id="loading-image" alt="Loading..."></div>
+        <p>Loading...</p>
+    </div>
+    <!--Top section-->
+    <img src="../1-images/navigation.png" class="icon" onclick="hamburgers()">
+    <section class="top">
+        <!--Header-->
+        <header>
+            <h1>Eric Petersen</h1>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <ul class="link-class" id="links">
+                <li><a href="../index.html" title="About">About</a></li>
+                <li><a href="../timeline.html" title="Timeline">Timeline</a></li>
+                <li><a href="../portfolio.html" title="Portfolio" class="active">Portfolio</a></li>
+                <li><a href="../contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!--Content-->
+    <section class="content">
+        <div class="portfolio-container section">
+            <div style="margin-right:30px;">
+                <div class="subtitle" style="text-align:left">
+                    <h3>Overview</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <p>TRIUMF is Canada's center for particle accelerator science, where beams of charged particles are smashed into stationary targets for research. New beamlines are being added and I further tested and developed the medical target delivery/return and detection system.</p>
+                    <br/>
+                    <p>Beam targets must be lowered to/raised from beamline level remotely due to high radioactivity - this is done via a pneumatic system. One concern is that targets may get stuck in the pipes, causing a long and hazardous search to find and extract the target. <b>I helped conceptualize then prototype an induction-based stationary detector to signal when a target has passed a section of pipe.</b> Using 3D printing and hand tools I improvised a coil winding jig and clamp to demonstrate the feasibility of induction sensing. After this was proven, I designed and built a circuit to send digital highs to a PLC, also progressing the build of our pneumatic system jig. A PCB for induction sensing was designed but not implemented before I left.</p>
+                    <br/>
+                    <p>By my initiative I also explored the optimization of our electron beam line heatsink. At peak operating capacity, it is hoped that many kW of power can be dissipated through an aluminum heatsink whose size is smaller than a book. After extensive consideration to material, which could not easily be changed from aluminum due to cost or the introduction of ions into the cooling water, <b>I decided to build an optimization algorithm (particle swarm optimization) to find the best heatsink geometry under the tight constraints of space, material, machining capability and flow rate. </b>By creating a parametrized geometry in solidworks, importing to ansys, then writing many Python scripts to control the meshing to simulation workflow I showed that for a uniform heat load of 10kW, the hottest regions can be 40C lower given fewer and tighter water channels. I tested this for both plate heatsink designs and pin heatsink designs.</p>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Results</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>Induction based target sensing proven, circuitry designed and tested to work</li>
+                        <li>Significant reduction to maximum temperature of aluminum heatsink (order of -40C) found through simulation and optimization given tight material and space constraints</li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+            <div style="flex-shrink:0;margin:auto">
+                <div class="slide-container">
+                    <div class="mySlides">
+                        <div class="column-container" style="width:100%">
+                            <img class="column" src="../1-images/triumf_poster.png" alt="TRIUMF Ansys sim poster" />
+                            <div class="photo-text">Poster on heatsink optimization methods and results</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width:100%">
+                            <img class="column" src="../1-images/triumf_ansys_sim.jpg" alt="Ansys mechanical scripting" />
+                            <div class="photo-text">Scripting Ansys heatsink optimization after work...</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/triumf_heatsink_section.png" alt="Labelled heatsink CAD" />
+                            <div class="photo-text">Section view of heatsink CAD used for cooling simulation</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/triumf_parametrization.png" alt="Parametrization of CAD" />
+                            <div class="photo-text">Parametrization of heatsinks for particle swarm optimization</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/triumf_detection_circuit.jpg" alt="Prototype target detection circuit" />
+                            <div class="photo-text">Target detection circuit soldered together</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/triumf_vacuum_port.jpg" alt="Vacuum port to clear chute section" />
+                            <div class="photo-text">Vacuum assembly to test movement of target to/from beamline</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/triumf_leak_testing.jpg" alt="Helium leak testing probe" />
+                            <div class="photo-text">Helium leak testing steel C seals under positive pressure</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/triumf_helium_connection.jpg" alt="Helium leak testing tank" />
+                            <div class="photo-text">Helium leak testing steel C seals under positive pressure</div>
+                        </div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)"><</a>
+                    <a class="next" onclick="plusSlides(1)">></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="subtitle">
+                <h3>Testing target detection system including electronics, vacuum controls</h3>
+            </div>
+            <div class="paragraph-writing">
+                <p>(apologies for very poor solo cameraman skills)</p>
+            </div>
+        </div>
+        <div class="video-container section">
+            <video controls muted width="100%">
+                <source src="../files/triumf_drop_test.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <img src="../1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+    <script src="../javascript.js"></script>
+    <script src="slides.js"></script>
+</body>
+</html>

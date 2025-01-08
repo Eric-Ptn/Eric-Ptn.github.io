@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eric Petersen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Eric Petersen, Eric Peterson, University Transition Program, UTP, UBC, University of British Columbia">
+    <!--CSS-->
+    <link href="../styling/main.css" rel="stylesheet" type="text/css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Loader-->
+    <div id="loading">
+        <div id="loading-image" alt="Loading..."></div>
+        <p>Loading...</p>
+    </div>
+    <!--Top section-->
+    <img src="../1-images/navigation.png" class="icon" onclick="hamburgers()">
+    <section class="top">
+        <!--Header-->
+        <header>
+            <h1>Eric Petersen</h1>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <ul class="link-class" id="links">
+                <li><a href="../index.html" title="About">About</a></li>
+                <li><a href="../timeline.html" title="Timeline">Timeline</a></li>
+                <li><a href="../portfolio.html" title="Portfolio" class="active">Portfolio</a></li>
+                <li><a href="../contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!--Content-->
+    <section class="content">
+        <div class="portfolio-container section">
+            <div style="margin-right:30px;">
+                <div class="subtitle" style="text-align:left">
+                    <h3>Overview</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <p>Designed a medical device enclosure to support the Belly Breathing Program at the BC Children's Hospital.</p>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Design</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>Used <b>OpenSCAD</b> to create the design parametrically</li>
+                        <li>Designed to be <b>3D-printed</b></li>
+                        <li>Dimensioned components for other parts of the setup</li>
+                    </ul>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Results</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>The design has been modified and put into production</li>
+                        <li>Several prototypes being used at the BC Children's Hospital</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="flex-shrink:0;margin:auto">
+                <div class="single-portfolio column-container section">
+                    <img class="column" src="../1-images/bcch-cad.jpg" alt="bcch cad" />
+                    <div class="photo-text">Medical device enclosure for the BC Children's Hospital</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img src="../1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+    <script src="../javascript.js"></script>
+</body>
+</html>

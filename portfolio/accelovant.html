@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eric Petersen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Eric Petersen, Eric Peterson, University Transition Program, UTP, UBC, University of British Columbia">
+    <!--CSS-->
+    <link href="../styling/main.css" rel="stylesheet" type="text/css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Loader-->
+    <div id="loading">
+        <div id="loading-image" alt="Loading..."></div>
+        <p>Loading...</p>
+    </div>
+    <!--Top section-->
+    <img src="../1-images/navigation.png" class="icon" onclick="hamburgers()">
+    <section class="top">
+        <!--Header-->
+        <header>
+            <h1>Eric Petersen</h1>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <ul class="link-class" id="links">
+                <li><a href="../index.html" title="About">About</a></li>
+                <li><a href="../timeline.html" title="Timeline">Timeline</a></li>
+                <li><a href="../portfolio.html" title="Portfolio" class="active">Portfolio</a></li>
+                <li><a href="../contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!--Content-->
+    <section class="content">
+        <div class="portfolio-container section">
+            <div style="margin-right:30px;">
+                <div class="subtitle" style="text-align:left">
+                    <h3>Overview</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <p>From January to April of my 2nd year, I interned at <a href="https://www.accelovant.com/" target="_blank">Accelovant</a>, a burgeoning figure in the semiconductor industry making precision temperature probes, for my first ever co-op term. There I led 2 major projects: creating a temperature/phosphor decay simulator to test sensors without placing them in a thermally controlled environment, and an optical fiber detection algorithm to very quickly detect colour contrasted circles in microscope images and deliver statistics about the optical fiber bundle (<a href="https://github.com/Eric-Ptn/Python-Rapid-Circle-Detection" target="_blank">repo</a>). In prototyping the simulator I used <b>Altium</b> for PCB design, <b>Fusion</b> for CAD, and <b>Python</b> PID and VISA for controls - later I manufactured via 3D printing and soldering. <b>OpenCV Python</b> was the core ingredient for fiber detection.</p>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Design</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>Designed a <b>thermally & optically controlled</b> LED enclosure in <b>Fusion 360</b>, using a thermoelectric cooler and an <b>Arduino</b>-controlled stepper motor attenuator to maintain constant LED output</li>
+                        <li>Prototyped an <b>LED current driver</b> PCB in <b>Altium</b> incorporating <b>optical negative feedback</b> and external signal input</li>
+                        <li>Used <b>Python</b> to implement <b>optical amplitude PID</b> program and PID tuning, wavegen VISA control, and sensor logging</li>
+                        <li>Used <b>OpenCV</b> library to preprocess images, isolate fibers using different masks, then perform the distance transform and calculate radii + fiber centroids</li>
+                    </ul>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Results</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>Achieved constant simulated temperatures within <b>0.2deg Celsius</b> over multiple days through effective optical amplitude & temperature feedback</li>
+                        <li>Successfully integrated wavegen control with main Python program to allow for <b>simulated temperature cycling runs</b>, representative of <b>the full sensor's operating range</b></li>
+                        <li>Redesigned existing LED driver PCB for <b>faster, immediate photodiode feedback</b> and much smaller form factor</li>
+                        <li>Shortened fiber counting time from <b>~5 minutes to under 2 seconds</b> with increased accuracy through total algorithm overhaul</li>
+                        <li>Semi-automated the process of updating the company's fiber statistics database</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="flex-shrink:0;margin:auto;">
+                <div class="slide-container section">
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/perspective-stage.png" alt="Perspective view of optical attenuator" />
+                            <div class="photo-text">Optical amplitude PID assembly</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/top-stage.png" alt="Top view of optical attenuator" />
+                            <div class="photo-text">Top view of optical amplitude PID assembly</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/temp-simulator.png" alt="Block diagram of temperature simulator" />
+                            <div class="photo-text">Overview of all temperature simulator components</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/10900842 - count.png" alt="Fiber Count" />
+                            <div class="photo-text">Microscope image of optical fiber bundle with fibers labelled</div>
+                        </div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)"><</a>
+                    <a class="next" onclick="plusSlides(1)">></a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container section">
+            <video controls muted width="100%">
+                <source src="../files/temp-simulator-vid.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <img src="../1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+    <script src="../javascript.js"></script>
+    <script src="slides.js"></script>
+</body>
+</html>

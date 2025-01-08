@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Eric Petersen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Eric Petersen, Eric Peterson, University Transition Program, UTP, UBC, University of British Columbia">
+    <!--CSS-->
+    <link href="./styling/main.css" rel="stylesheet" type="text/css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+    <body>
+        <!--Loader-->
+        <div id="loading">
+            <div id="loading-image" alt="Loading..."></div>
+            <p>Loading...</p>
+        </div>
+        <!--Top section-->
+        <img src="1-images/navigation.png" class="icon" onclick="hamburgers()">
+        <section class="top">
+            <!--Header-->
+            <header>
+                <h1>Eric Petersen</h1>
+            </header>
+            <!--Navigation-->
+            <nav>
+                <ul class="link-class" id="links">
+                    <li><a href="index.html" title="About">About</a></li>
+                    <li><a href="timeline.html" title="Timeline" class="active">Timeline</a></li>
+                    <li><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
+                    <li><a href="contact.html" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        </style>
+        <section class="content section">
+            <div class="timeline-container">
+                <div class="timeline">
+                    <ul>
+                        <li>
+                            <div class="timeline-content">
+                                <h2 class="date">Present</h2>
+                                <h1>Volunteer Researcher, Professor Dana Grecov</h1>
+                                <p>Volunteer research in non-Newtonian fluids. Simulated non-Newtonian fluids in a hip joint.<br /><br /></p>
+                                <h1>Anesthesia Research Volunteer, Royal Columbian Hospital</h1>
+                                <p>3D printed an enclosure for a low-cost anesthesia pump. Helping write abstracts for research conferences.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h2 class="date">Spring + Summer 2023</h2>
+                                <h1>UBC AeroDesign, Advanced Airfoils Lead</h1>
+                                <p>The team was awarded 1st place in the 2022-2023 SAE AeroDesign design presentation.<br>Lead for Advanced Airfoils through 2023-2024 design cycle. <br /><br /></p>
+                                <h1>Eng Phys Robot Summer</h1>
+                                <p>Made an autonomous racing robot, one of two successful "jumping shortcut" robots.<br /><br /></p>
+                                <h1>Accelovant Internship</h1>
+                                <p>Designed test equipment for precision fiber-optic temperature sensors used in semiconductor manufacturing.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h2 class="date">September 2022</h2>
+                                <h1>UBC AeroDesign, Advanced Airfoils</h1>
+                                <p>Designing RC aircraft for the international SAE competition in Fort Worth, Texas (2022-2023 design cycle).<br /><br /></p>
+                                <h1>Engineering Physics at UBC, 2nd year</h1>
+                                <p>Completed 1st year and was accepted into Eng Phys.<br /><br /></p>
+                                <h1>Trek Excellence Scholarship</h1>
+                                <p>Awarded to top 5% of undergrads in year, faculty, and school.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h2 class="date">Summer 2022</h2>
+                                <h1>UBC AeroDesign, Advanced Airfoils</h1>
+                                <p>The team was awarded 5th place in the 2021-2022 SAE AeroDesign competition overall.<br /><br /></p>
+                                <h1>Personal RC Aircraft Project</h1>
+                                <p>Started designing a 1m span canard aircraft for fun. Building and iterating in 2023.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h2 class="date">September 2021</h2>
+                                <h1>UBC Admission</h1>
+                                <p>Admitted to the Faculty of Applied Science of University of British Columbia!<br /><br /></p>
+                                <h1>University Transition Program Early Entrance Award</h1>
+                                <p>Awarded for early entrance to university, as well as academic merit and leadership skills.<br /><br /></p>
+                                <h1>BC Achievement Scholarship</h1>
+                                <p>Awarded to the top 8000 high school graduates of British Columbia.<br /><br /></p>
+                                <h1>UBC AeroDesign, Advanced Airfoils Member</h1>
+                                <p>Successful application to UBC AeroDesign, joined the Advanced Airfoils team</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h2 class="date">2020-2021</h2>
+                                <h1>COSMIC Medical & Project COVER</h1>
+                                <p>During the beginning of lockdown, helped out with outreach and onboarding.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h2 class="date">2020</h2>
+                                <h1>BC Children's Hospital</h1>
+                                <p>Created 3D CAD design of medical device enclosure.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h2 class="date">2019</h2>
+                                <h1>Private Piano Tutor</h1>
+                                <p>Instructed Level 5 piano lessons.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <img src="1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+        <script src="javascript.js"></script>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eric Petersen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Eric Petersen, Eric Peterson, University Transition Program, UTP, UBC, University of British Columbia">
+    <!--CSS-->
+    <link href="../styling/main.css" rel="stylesheet" type="text/css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Loader-->
+    <div id="loading">
+        <div id="loading-image" alt="Loading..."></div>
+        <p>Loading...</p>
+    </div>
+    <!--Top section-->
+    <img src="../1-images/navigation.png" class="icon" onclick="hamburgers()">
+    <section class="top">
+        <!--Header-->
+        <header>
+            <h1>Eric Petersen</h1>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <ul class="link-class" id="links">
+                <li><a href="../index.html" title="About">About</a></li>
+                <li><a href="../timeline.html" title="Timeline">Timeline</a></li>
+                <li><a href="../portfolio.html" title="Portfolio" class="active">Portfolio</a></li>
+                <li><a href="../contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!--Content-->
+    <section class="content">
+        <div class="portfolio-container section">
+            <div style="margin-right:30px;">
+                <div class="subtitle" style="text-align:left">
+                    <h3>Overview</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <p>UBC AeroDesign is an engineering student team that designs, builds, and flies payload-lifting, radio-controlled fixed-wing airplanes to compete in the international SAE Aero Design Collegiate Series. The 2022 & 2023 Advanced Class competition featured a firefighting-inspired mission profile. As co-lead on the Advanced Airfoils Team, I help conduct <b>airfoil analysis</b>, design the <b>3D wing configuration</b>, model the plane in <b>CAD</b> and size the structural components to meet the competition requirements. Personally, I am most invested in the aerodynamic analysis.</p>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Design</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>Modelled wing and tail components in <b>SolidWorks</b>, added to the plane assembly in <b>PDM</b></li>
+                        <li>Optimized the plane wing and tail design through <b>constraint analysis</b>, <b>static and dynamic stability simulation</b>, and control surface sizing</li>
+                        <li>Configured the wing spar and other structures by selecting cross-section, material and dimensions for low weight and sufficient safety factor</li>
+                    </ul>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Results</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>The UBC Advanced Team earned <b>1st place</b> in the 2023 competition technical presentation</li>
+                        <li>The UBC Advanced Team earned <b>5th place</b> overall in the 2022 competition</li>
+                    </ul>
+                    <br>
+                    <p>The following videos were taken at competition in Texas - I did not personally take these videos but they are here anyways :)</p>
+                </div>
+            </div>
+            <div style="flex-shrink:0;margin:auto">
+                <div class="slide-container">
+                    <div class="mySlides">
+                        <div class="column-container" style="width:100%">
+                            <img class="column" src="../1-images/Render1.JPG" alt="Advanced Class 2022 render 1" />
+                            <div class="photo-text">SolidWorks render of the 2021-2022 UBC AeroDesign Advanced Class plane</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width:100%">
+                            <img class="column" src="../1-images/aero-aileron.png" alt="Advanced Class 2023 aileron sim" />
+                            <div class="photo-text">SolidWorks Flow sim of rotational drag</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/adv-slide.png" alt="Advanced Class 2022 technical presentation" />
+                            <div class="photo-text">A slide from the 2021-2022 Advanced Class technical presentation</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/alive-plane.JPG" alt="Test flight 2022" />
+                            <div class="photo-text">The UBC AeroDesign 2022 Advanced Class plane at test flight</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/adv2023plane.png" alt="Advanced Class 2023 render 1" />
+                            <div class="photo-text">SolidWorks render of the 2022-2023 UBC AeroDesign Advanced Class plane</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/dynamic stability 2023.png" alt="Test flight 2022" />
+                            <div class="photo-text">Dynamic stability behaviour of 2022-2023 UBC AeroDesign Advanced Class plane</div>
+                        </div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)"><</a>
+                    <a class="next" onclick="plusSlides(1)">></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="subtitle">
+                <h3>2022-2023 flight at competition</h3>
+            </div>
+        </div>
+        <div class="video-container section">
+            <video controls muted width="100%">
+                <source src="../files/comp-flight-2023.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="section">
+            <div class="subtitle">
+                <h3>2021-2022 flight at competition</h3>
+            </div>
+        </div>
+        <div class="video-container section">
+            <video controls muted width="100%">
+                <source src="../files/comp-flight-2022.MOV" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <img src="../1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+    <script src="../javascript.js"></script>
+    <script src="slides.js"></script>
+</body>
+</html>

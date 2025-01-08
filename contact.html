@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Eric Petersen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Eric Petersen, Eric Peterson, University Transition Program, UTP, UBC, University of British Columbia">
+    <!--CSS-->
+    <link href="./styling/main.css" rel="stylesheet" type="text/css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <!--Loader-->
+        <div id="loading">
+            <div id="loading-image" alt="Loading..."></div>
+            <p>Loading...</p>
+        </div>
+        <!--Top section-->
+        <img src="1-images/navigation.png" class="icon" onclick="hamburgers()">
+        <section class="top">
+            <!--Header-->
+            <header>
+                <h1>Eric Petersen</h1>
+            </header>
+            <!--Navigation-->
+            <nav>
+                <ul class="link-class" id="links">
+                    <li><a href="index.html" title="About">About</a></li>
+                    <li><a href="timeline.html" title="Timeline">Timeline</a></li>
+                    <li><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
+                    <li><a href="contact.html" title="Contact" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!--Content-->
+        <section class="content">
+            <div id="contact-1">
+                <div class="subtitle">
+                    <h3>Contact Me</h3>
+                </div>
+                <div class="writing section" style="text-align:center;">
+                    <p>Check out my presence on LinkedIn <a href="https://www.linkedin.com/in/ericp2022/" target="_blank">here</a>.</p>
+                    <p>Download my <a href="files/EricPetersen-resume.pdf" target="_blank">resume</a>.</p>
+                    <p>Or send me a message below:</p>
+                </div>
+                <div id="contact-form" class="section">
+                    <form action="https://formspree.io/f/mqkwgdlg" method="post">
+                            <input type="text" name="name" placeholder="Name" style="background-color:rgb(240,240,240);">
+                            <input type="email" name="email" placeholder="Email" style="background-color:rgb(240,240,240);">
+                            <input type="text" name="subject" placeholder="Subject" style="background-color:rgb(240,240,240);">
+                            <textarea name="message" placeholder="What do you want to talk about?" rows="5" style="background-color:rgb(240,240,240);resize:none;"></textarea>
+                        <input type="submit" value="Send" style="background-color:rgb(240,240,240); width:auto;min-width:0;">
+                        <input type="reset" value="Reset" style="background-color:rgb(240,240,240); width:auto;min-width:0;">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <img src="1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+        <script src="javascript.js"></script>
+    </body>
+</html>

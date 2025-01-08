@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eric Petersen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Eric Petersen, Eric Peterson, University Transition Program, UTP, UBC, University of British Columbia">
+    <!--CSS-->
+    <link href="../styling/main.css" rel="stylesheet" type="text/css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Loader-->
+    <div id="loading">
+        <div id="loading-image" alt="Loading..."></div>
+        <p>Loading...</p>
+    </div>
+    <!--Top section-->
+    <img src="../1-images/navigation.png" class="icon" onclick="hamburgers()">
+    <section class="top">
+        <!--Header-->
+        <header>
+            <h1>Eric Petersen</h1>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <ul class="link-class" id="links">
+                <li><a href="../index.html" title="About">About</a></li>
+                <li><a href="../timeline.html" title="Timeline">Timeline</a></li>
+                <li><a href="../portfolio.html" title="Portfolio" class="active">Portfolio</a></li>
+                <li><a href="../contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!--Content-->
+    <section class="content">
+        <div class="portfolio-container section">
+            <div style="margin-right:30px;">
+                <div class="subtitle" style="text-align:left">
+                    <h3>Overview</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <p>Machined a cell phone holder as part of the Student Machine Shop course for physics and astronomy at UBC. I learned to use the <b>mill</b>, <b>lathe</b>, <b>waterjet cutter</b> and bandsaw in this project to create parts with precise dimensions according to drawing.</p>
+                </div>
+            </div>
+            <div style="flex-shrink:0;margin:auto;">
+                <div class="slide-container section">
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/sms-solidworks.png" alt="SolidWorks model of cell phone holder" />
+                            <div class="photo-text">SolidWorks model of cell phone holder</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/cell-phone-holder-standing.jpg" alt="Machined cell phone holder standing" />
+                            <div class="photo-text">Machined cell phone holder standing</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/cell-phone-holder-folded.jpg" alt="Machined cell phone holder folded" />
+                            <div class="photo-text">Machined cell phone holder folded</div>
+                        </div>
+                    </div>
+    
+                    <a class="prev" onclick="plusSlides(-1)"><</a>
+                    <a class="next" onclick="plusSlides(1)">></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img src="../1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+    <script src="../javascript.js"></script>
+    <script src="slides.js"></script>
+</body>
+</html>

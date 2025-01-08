@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eric Petersen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Eric Petersen, Eric Peterson, University Transition Program, UTP, UBC, University of British Columbia">
+    <!--CSS-->
+    <link href="../styling/main.css" rel="stylesheet" type="text/css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Loader-->
+    <div id="loading">
+        <div id="loading-image" alt="Loading..."></div>
+        <p>Loading...</p>
+    </div>
+    <!--Top section-->
+    <img src="../1-images/navigation.png" class="icon" onclick="hamburgers()">
+    <section class="top">
+        <!--Header-->
+        <header>
+            <h1>Eric Petersen</h1>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <ul class="link-class" id="links">
+                <li><a href="../index.html" title="About">About</a></li>
+                <li><a href="../timeline.html" title="Timeline">Timeline</a></li>
+                <li><a href="../portfolio.html" title="Portfolio" class="active">Portfolio</a></li>
+                <li><a href="../contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!--Content-->
+    <section class="content">
+        <div class="portfolio-container section">
+            <div style="margin-right:30px;">
+                <div class="subtitle" style="text-align:left">
+                    <h3>Overview</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <p>Inspired by my experience at UBC AeroDesign and a desire to test the skills I've learned so far, I began to independently design a canard, twin vertical tail, 
+                        pusher aircraft configuration during the summer of 2022. So far, I have completed <b>airfoil analysis</b> and determined a <b>3D wing configuration</b>, 
+                        conducted <b>stability analysis</b>, and modelled the entire plane in <b>SolidWorks</b> with <b>DFA/M</b> considerations in mind. Next steps are to manufacture
+                         the first prototype and develop the necessary software.</p>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Design</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>Used <b>CFD</b> tools and <b>XFLR</b> to analyze aerodynamics</li>
+                        <li>Determined <b>static stability</b> performance by balancing moments about cg</li>
+                        <li>Created <b>SolidWorks model</b> of design</li>
+                    </ul>
+                </div>
+                <div class="subtitle" style="text-align:left">
+                    <h3>Results</h3>
+                </div>
+                <div class="paragraph-writing">
+                    <ul style="margin:0">
+                        <li>Achieved wing planform efficiency of <b>0.986</b> without sacrificing manufacturability</li>
+                        <li>Despite the canard configuration, all response modes are damped and dynamically stable</li>
+                        <li>Wing and tail stall characteristics are coordinated</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="flex-shrink:0;margin:auto;">
+                <div class="slide-container section">
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/terrain-mapping.png" alt="XFLR model" />
+                            <div class="photo-text">Rev 1 XFLR model used for lift and stability</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/plane-front.jpg" alt="Rev 2 build front" />
+                            <div class="photo-text">Rev 2 Plane from the front</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/elec-top.jpg" alt="Electronics overview" />
+                            <div class="photo-text">Plane electronics</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/mapper-solidworks.png" alt="SolidWorks model" />
+                            <div class="photo-text">SolidWorks model for Rev 1</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/rev1-wing.jpg" alt="Rev 1 Wing Build" />
+                            <div class="photo-text">Rev 1 Wing Build</div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="column-container" style="width: 100%">
+                            <img class="column" src="../1-images/motor-back.jpg" alt="Motor back" />
+                            <div class="photo-text">Waterjet motor stand</div>
+                        </div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)"><</a>
+                    <a class="next" onclick="plusSlides(1)">></a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="subtitle">
+                <h3>Flight Electronics Test</h3>
+            </div>
+        </div>
+        <div class="video-container section">
+            <video controls width="100%">
+                <source src="../files/elec-test.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <img src="../1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+    <script src="../javascript.js"></script>
+    <script src="slides.js"></script>
+</body>
+</html>

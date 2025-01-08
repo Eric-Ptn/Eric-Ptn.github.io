@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eric Petersen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Eric Petersen, Eric Peterson, University Transition Program, UTP, UBC, University of British Columbia">
+    <!--CSS-->
+    <link href="../styling/main.css" rel="stylesheet" type="text/css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Loader-->
+<div id="loading">
+    <div id="loading-image" alt="Loading..."></div>
+    <p>Loading...</p>
+</div>
+<!--Top section-->
+<img src="../1-images/navigation.png" class="icon" onclick="hamburgers()">
+<section class="top">
+    <!--Header-->
+    <header>
+        <h1>Eric Petersen</h1>
+    </header>
+    <!--Navigation-->
+    <nav>
+        <ul class="link-class" id="links">
+            <li><a href="../index.html" title="About">About</a></li>
+            <li><a href="../timeline.html" title="Timeline">Timeline</a></li>
+            <li><a href="../portfolio.html" title="Portfolio" class="active">Portfolio</a></li>
+            <li><a href="../contact.html" title="Contact">Contact</a></li>
+        </ul>
+    </nav>
+</section>
+<!--Content-->
+<section class="content">
+    <div class="portfolio-container section">
+        <div style="margin-right:30px;">
+            <div class="subtitle" style="text-align:left">
+                <h3>Overview</h3>
+            </div>
+            <div class="paragraph-writing">
+                <p>During the summer, I created an art store for my brother's digital artwork.'</p>
+            </div>
+            <div class="subtitle" style="text-align:left">
+                <h3>Design</h3>
+            </div>
+            <div class="paragraph-writing">
+                <ul style="margin:0">
+                    <li>Programmed back-end and routing using Python Flask with a SQLite3 database, with functionality for account
+                        creation and login, user carts, artwork uploads and admin privileges, and watermarking</li>
+                    <li>Successfully integrated PayPal checkout through requests to their REST API</li>
+                    <li>Front-end with JavaScript and Jinja templating, libraries like Masonry and jQuery are used</li>
+                </ul>
+            </div>
+            <div class="subtitle" style="text-align:left">
+                <h3>Results</h3>
+            </div>
+            <div class="paragraph-writing">
+                <ul style="margin:0">
+                    <li>Acts as an easy-to-navigate platform for both users and the artist</li>
+                    <li>Increased transaction and database security by moving payment information away from users, avoiding Paypal's front end service</li>
+                    <li>To be deployed on Google Cloud Platform soon (I hope)</li>
+                </ul>
+            </div>
+        </div>
+        <div style="flex-shrink:0;margin:auto;">
+            <div class="slide-container section">
+                <div class="mySlides">
+                    <div class="column-container" style="width: 100%">
+                        <img class="column" src="../1-images/store-modal.png" alt="Artwork modal" />
+                        <div class="photo-text">Modal used to display artwork information</div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="column-container" style="width: 100%">
+                        <img class="column" src="../1-images/store-cart.png" alt="User cart" />
+                        <div class="photo-text">User cart display and functionality</div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="column-container" style="width: 100%">
+                        <img class="column" src="../1-images/admin-dashboard.png" alt="Admin dashboard" />
+                        <div class="photo-text">Admin dashboard for the artist</div>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)"><</a>
+                <a class="next" onclick="plusSlides(1)">></a>
+            </div>
+        </div>
+    </div>
+</section>
+<img src="../1-images/scroll-up.png" onclick="topFunction()" id="to-top" title="Go to top">
+<script src="../javascript.js"></script>
+<script src="slides.js"></script>
+</body>
+</html>
